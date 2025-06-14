@@ -6,6 +6,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f9ff;
+}
+
 /* header */
 .container-menu {
     display: flex;
@@ -45,6 +53,26 @@ nav a {
 }
 
 /* Responsive header */
+
+@media (max-width: 1200px) {
+    .container-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    .logo-name img {
+        width: 45px;
+        height: 45px;
+    }
+    .logo-name {
+        gap: 10px;
+    }
+    nav ul {
+        gap: 30px;
+        padding-right: 0;
+    }
+}
+
 @media (max-width: 900px) {
     .container-menu {
         flex-direction: column;
@@ -124,6 +152,35 @@ nav a {
 }
 
 /* Responsive design for .container-accueil and related classes */
+
+@media (max-width: 1200px) {
+    .container-accueil {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .banner-accueil img,
+    .titre-text-accueil {
+        width: 90vw;
+        max-width: 600px;
+        height: auto;
+    }
+    .titre-accueil h1 {
+        margin-left: 0;
+        font-size: 2rem;
+    }
+    .text-accueil p {
+        padding: 0 20px;
+        font-size: 18px;
+        margin-top: 40px;
+    }
+    .titre-text-accueil {
+        padding-top: 20px;
+        min-width: unset;
+        min-height: unset;
+        height: auto;
+    }
+}
+
 @media (max-width: 900px) {
     .container-accueil {
         flex-direction: column;
@@ -245,6 +302,30 @@ nav a {
 }
 
 /* Responsive styles */
+
+@media (max-width: 1200px) {
+    .container-image-text-service {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 30px;
+        gap: 40px;
+    }
+    .A {
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+    .container-image-text-service img {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .titre-text {
+        width: 100%;
+        height: auto;
+        min-width: unset;
+        min-height: unset;
+        padding: 15px 0;
+    }
+}
+
 @media (max-width: 900px) {
     .container-image-text-service {
         grid-template-columns: 1fr;
@@ -365,6 +446,23 @@ nav a {
 }
 
 /* Responsive styles for services-urgence_horaire */
+@media (max-width: 1200px) {
+    .services-urgence_horaire {
+        flex-direction: column;
+        gap: 50px;
+        padding: 30px 0;
+        margin: 0 50px;
+    }
+    .service-urgence-horaire {
+        flex-direction: column;
+        align-items: center;
+    }
+    .horaire {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
 @media (max-width: 900px) {
     .services-urgence_horaire {
         flex-direction: column;
@@ -478,6 +576,23 @@ nav a {
     color: #333;
 }
 
+/* Responsive styles for container-image-button */
+
+@media (max-width: 1200px) {
+    .container-image-button {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-image-button img {
+        width: 180px;
+        height: 180px;
+    }
+    .container-image-button button {
+        padding: 10px 18px;
+        font-size: 15px;
+    }
+}
+
 @media (max-width: 900px) {
     .container-image-button {
         flex-direction: column;
@@ -490,6 +605,23 @@ nav a {
     .container-image-button button {
         padding: 8px 16px;
         font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container-image-button {
+        gap: 15px;
+    }
+    .container-image-button img {
+        width: 120px;
+        height: 120px;
+    }
+    .container-image-button button {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+    .container-image-button h3 {
+        font-size: 1rem;
     }
 }
 
