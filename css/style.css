@@ -1,0 +1,497 @@
+/* selecteur universel */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header */
+.container-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0077CC;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 30px;
+}
+
+.logo-name img {
+    width: 50px;
+    height: 50px;
+    background-color: #0077CC;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    padding-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Responsive header */
+@media (max-width: 900px) {
+    .container-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    .logo-name {
+        margin-bottom: 15px;
+    }
+    nav ul {
+        gap: 25px;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .container-menu {
+        padding: 12px;
+    }
+    .logo-name img {
+        width: 38px;
+        height: 38px;
+    }
+    .logo-name {
+        gap: 8px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        align-items: flex-start;
+    }
+    nav a {
+        font-size: 15px;
+        padding: 6px 0;
+    }
+}
+
+/* Titre-accueil-banner */
+.container-accueil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 65px;
+}
+
+.banner-accueil img {
+    width: 660px;
+    height: 505px;
+    border-bottom-left-radius: 0px;
+}
+
+.titre-accueil h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.text-accueil p {
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 60px;
+    font-size: 19px;
+    text-align: justify;
+    padding: 0 45px;
+}
+
+.titre-text-accueil {
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    padding-top: 20px;
+    width: 660px;
+    height: 502px;
+    color: black;
+}
+
+/* Responsive design for .container-accueil and related classes */
+@media (max-width: 900px) {
+    .container-accueil {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .banner-accueil img,
+    .titre-text-accueil {
+        width: 90vw;
+        max-width: 500px;
+        height: auto;
+    }
+    .titre-accueil h1 {
+        margin-left: 0;
+        font-size: 1.7rem;
+    }
+    .text-accueil p {
+        padding: 0 15px;
+        font-size: 17px;
+        margin-top: 30px;
+    }
+    .titre-text-accueil {
+        padding-top: 15px;
+        min-width: unset;
+        min-height: unset;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .container-accueil {
+        margin-bottom: 30px;
+    }
+    .banner-accueil img,
+    .titre-text-accueil {
+        width: 98vw;
+        max-width: 100%;
+        height: auto;
+    }
+    .titre-accueil h1 {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+    .text-accueil p {
+        font-size: 15px;
+        padding: 0 5px;
+        margin-top: 15px;
+    }
+    .titre-text-accueil {
+        padding-top: 10px;
+    }
+}
+
+/* Nos services */
+.services-medicaux {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services-medicaux h1 {
+    color: #0077CC;
+    margin-bottom: 35px;
+}
+
+.services-medicaux p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.container-image-text-service { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 0 45px;
+    margin-right: 50px;
+    text-align: center;
+    
+}
+
+.container-image-text-service img {
+    width: 40%;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.A {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin-bottom: 40px;
+    margin-left: 50px;
+}
+
+.titre-text {
+    line-height: 1.5;
+    text-align: center;
+    box-shadow: 5px 10px 6px 2px rgba(0, 0, 0, 0.1);
+    background-color: #F0F0F0;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 482px;
+    height: 197px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titre-text h3,
+.titre-text p {
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+    .container-image-text-service {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+        gap: 30px;
+    }
+    .A {
+        flex-direction: column;
+        margin-left: 0;
+        margin-bottom: 25px;
+    }
+    .container-image-text-service img {
+        width: 60%;
+        margin-bottom: 15px;
+    }
+    .titre-text {
+        width: 100%;
+        height: auto;
+        min-width: unset;
+        min-height: unset;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .container-image-text-service {
+        padding: 0 5px;
+        gap: 18px;
+    }
+    .A {
+        margin-bottom: 15px;
+    }
+    .container-image-text-service img {
+        width: 90%;
+    }
+    .titre-text {
+        width: 100%;
+        padding: 5px 0;
+        box-shadow: 2px 4px 4px 1px rgba(0,0,0,0.08);
+    }
+    .titre-text h3,
+    .titre-text p {
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+
+/* .container-image-text-service { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container-image-text-service img {
+    width: 30%;
+}
+
+.A {
+    display: flex;
+}
+
+/* services-urgence_horaire */
+.services-urgence_horaire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 100px;
+    background: rgba(255, 235, 59, 0.22);
+    border-radius: 10px;
+    box-shadow: 0px 6px 8px 4px rgba(0, 0, 0, 0.30);
+    padding: 40px 0px;
+    margin: 0 90px;
+    margin-bottom: 40px;
+}
+
+.service-urgence-horaire {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.service-urgence, .horaire {
+    margin-bottom: 50px;
+}
+
+.service-urgence-horaire h1 {
+    color: #0077CC;
+    margin-bottom: 25px;
+}
+
+.horaire {
+    margin-left: 60px;
+}
+
+.strg {
+    color: rgba(255, 0, 0, 0.603);
+    font-size: 18px;
+}
+
+.horaire p, span {
+    line-height: 1.6;
+    margin-bottom: 46px;
+    font-size: 16px;
+}
+
+.service-urgence p, span {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.h2 {
+    position: relative;
+    top: 125px;
+    left: 9px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Responsive styles for services-urgence_horaire */
+@media (max-width: 900px) {
+    .services-urgence_horaire {
+        flex-direction: column;
+        gap: 35px;
+        padding: 25px 0;
+        margin: 0 20px;
+    }
+    .service-urgence-horaire {
+        flex-direction: column;
+        align-items: center;
+    }
+    .horaire {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .services-urgence_horaire {
+        padding: 12px 0;
+        margin: 0 5px;
+        gap: 18px;
+    }
+    .service-urgence, .horaire {
+        margin-bottom: 20px;
+    }
+    .service-urgence-horaire h1 {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+    .h2 {
+        top: 0;
+        left: 0;
+        font-size: 15px;
+        position: static;
+        margin-bottom: 8px;
+    }
+    .horaire p, .service-urgence p, span {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Notre equipe */
+.equipe h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #0077CC;
+    font-size: 1.6rem;
+}
+
+.equipe p {
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    padding: 0 80px;
+    background: #FFF;
+    border-radius: 10px;
+}
+
+.container-image-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cont-image-tt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.container-image-button img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container-image-button button {
+    background-color: #0077CC;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.container-image-button button:hover {
+    background-color: #005fa3;
+}
+
+.boutons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-top: -70px;
+}
+
+.container-image-button h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+@media (max-width: 900px) {
+    .container-image-button {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-image-button img {
+        width: 150px;
+        height: 150px;
+    }
+    .container-image-button button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+
+

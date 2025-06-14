@@ -1,0 +1,144 @@
+/* header */
+.container-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0077CC;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 30px;
+}
+
+.logo-name img {
+    width: 50px;
+    height: 50px;
+    background-color: #0077CC;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    padding-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f9ff;
+}
+
+.contact-section {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  color: #0066cc;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.submit-button {
+  background: #0066cc;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+  justify-content: space-between;
+}
+
+.space-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-button:hover {
+  background: #004c99;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+  margin-bottom: 20px;
+  color: #0066cc;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.fake-map {
+  margin-top: 20px;
+  background: #e0e0e0;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #333;
+}
